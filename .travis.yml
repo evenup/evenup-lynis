@@ -43,6 +43,6 @@ notifications:
   email: false
   hipchat:
     rooms:
-      - secure: "dpF/KF4dTsYh2tkBpxCg5jCYSie+ge+IsUAcwiCfqdVGOqFs8LyaJvHzObVA\naF6up/OFLjRtt979ht9dgUZUHEvbZk0iQpbojSRng8CWJUNobXVE1cLh1HKg\nkTh9NlUu1hu0Eyk139OMZo1bC4nmN83yCBnclymgWnNaT43FttA="
+      - secure: "hFn1IPniahB7mdgd0l8rRjeCfkkAWnSNJA5PkKaWKtv/e+JWkFp6mIsdPV+XipLL+h8f6GfNvvwHQtWHTWVQHbEszVxL4nGzIeBI391nyHFZR9vU3ePy2rkm3dlm90NM59XVYMaGBJBoIyAmLOoFZZhx0OgIWKQ73HFpkZOdyv8="
   on_success: always
   on_failure: always
