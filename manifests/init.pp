@@ -27,7 +27,7 @@
 #
 
 class lynis (
-  $version  = 'latest',
+  $version = 'latest',
 ) {
 
   class { 'lynis::install': }

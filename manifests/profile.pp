@@ -48,18 +48,18 @@
 define lynis::profile (
   $source,
   $profile_name,
-  $enable_cron  = false,
-  $hour         = fqdn_rand(23),
-  $minute       = fqdn_rand(59),
-  $logstashify  = false,
+  $enable_cron = false,
+  $hour        = fqdn_rand(23),
+  $minute      = fqdn_rand(59),
+  $logstashify = false,
 ) {
 
   file { "/etc/lynis/${profile_name}.prf":
-    ensure  => 'file',
-    owner   => 'root',
-    group   => 'root',
-    mode    => '0444',
-    source  => $source,
+    ensure => 'file',
+    owner  => 'root',
+    group  => 'root',
+    mode   => '0444',
+    source => $source,
   }
 
   if $logstashify {
