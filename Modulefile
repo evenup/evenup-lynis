@@ -1,7 +1,0 @@
-name 'evenup-lynis'
-version '0.0.1'
-author 'Justin Lambert <jlambert@letsevenup.com>'
-license 'Apache'
-summary 'Manages lynis and profiles.'
-description 'Installs lynis and security profiles.  Allows running profiles automatically from cron with reports formatted for logstash'
-source 'https://github.com/evenup/evenup-lynis'
