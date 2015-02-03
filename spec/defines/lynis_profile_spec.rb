@@ -16,7 +16,7 @@ describe 'lynis::profile', :type => :define do
     it { should contain_file('/etc/lynis/my_profile.prf') }
     it { should contain_cron('my_profile').with(
       :ensure   => 'present',
-      :command  => '/usr/bin/lynis --cronjob --profile /etc/lynis/my_profile.prf',
+      :command  => '/usr/bin/lynis --cronjob --profile /etc/lynis/my_profile.prf > /dev/null',
       :hour     => 3,
       :minute   => 10
     ) }
@@ -27,7 +27,7 @@ describe 'lynis::profile', :type => :define do
 
     it { should contain_cron('ls_profile').with(
       :ensure   => 'present',
-      :command  => '/usr/bin/lynis --cronjob --profile /etc/lynis/ls_profile.prf && /usr/local/bin/lynis_parse.rb'
+      :command  => '/usr/bin/lynis --cronjob --profile /etc/lynis/ls_profile.prf && /usr/local/bin/lynis_parse.rb > /dev/null'
     ) }
   end
 
