@@ -1,3 +1,5 @@
+20150203 - v0.1.1
+  Disable emails on cron runs except on errors
 20150105 - v0.1.0
   Add acceptance tests
   Update helper files
