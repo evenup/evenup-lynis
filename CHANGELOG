@@ -1,3 +1,5 @@
+20150204 - v0.1.2
+  Disable emails when using LS
 20150203 - v0.1.1
   Disable emails on cron runs except on errors
 20150105 - v0.1.0
