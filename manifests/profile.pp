@@ -71,7 +71,7 @@ define lynis::profile (
   if $enable_cron {
     cron { $profile_name:
       ensure  => 'present',
-      command => "/usr/bin/lynis --cronjob --profile /etc/lynis/${profile_name}.prf${ls} > /dev/null",
+      command => "/usr/bin/lynis --cronjob --profile /etc/lynis/${profile_name}.prf > /dev/null${ls}",
       hour    => $hour,
       minute  => $minute,
     }
