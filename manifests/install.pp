@@ -15,7 +15,7 @@
 class lynis::install {
 
   package { 'lynis':
-    ensure  => $::lynis::version
+    ensure  => $::lynis::version,
   }
 
   file { '/usr/local/bin/lynis_parse.rb':
@@ -23,6 +23,6 @@ class lynis::install {
     owner  => 'root',
     group  => 'root',
     mode   => '0555',
-    source => "puppet:///modules/${module_name}/lynis_parse.rb"
+    source => "puppet:///modules/${module_name}/lynis_parse.rb",
   }
 }

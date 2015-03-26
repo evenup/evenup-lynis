@@ -30,6 +30,6 @@ class lynis (
   $version = 'latest',
 ) {
 
-  class { 'lynis::install': }
+  class { '::lynis::install': }
 
 }
